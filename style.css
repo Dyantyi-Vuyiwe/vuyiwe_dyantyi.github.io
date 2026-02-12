@@ -1,0 +1,171 @@
+
+.wave {
+    display: inline-block;
+    animation: wave-animation 1.5s infinite;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background: #0f172a;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.hero h1 span {
+  color: #38bdf8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+.section {
+  padding: 100px 10%;
+}
+
+.project-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #030507;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.skills-container span {
+  display: inline-block;
+  background: #1e293b;
+  padding: 8px 15px;
+  margin: 10px 10px 0 0;
+  border-radius: 20px;
+}
+.skill-categories {
+  margin-top: 30px;
+}
+
+.skill-btn {
+  padding: 10px 20px;
+  margin: 10px 10px 0 0;
+  border: none;
+  background: #1e293b;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.skill-btn:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+.skill-btn.active {
+  background: #38bdf8;
+  color: black;
+}
+
+.skill-content {
+  margin-top: 30px;
+}
+
+.skills-box {
+  display: none;
+}
+
+.skills-box span {
+  display: inline-block;
+  background: #1e293b;
+  padding: 8px 15px;
+  margin: 10px 10px 0 0;
+  border-radius: 20px;
+}
+
+.skills-box.active {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e293b;
+}
